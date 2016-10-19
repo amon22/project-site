@@ -1,0 +1,219 @@
+body {
+    background-color: whitesmoke !important;
+}
+header{
+    z-index: 2;
+}
+#menu {
+    z-index: 0;
+    align-content: center;
+    text-align: center;
+    color: antiquewhite;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+    height: auto;
+
+}
+
+.navbar-item {
+    font-family: ‘Lucida Console’, Monaco, monospace;
+    border-left: 1px solid antiquewhite;
+    color: #FFFFFF !important;
+}
+
+.navbar-item:hover {
+    color: #FFFFFF;
+    text-decoration: underline !important;
+}
+
+.title {
+    font-family: ‘Lucida Console’, Monaco, monospace;
+    font-size: 30px;
+
+    color: #FFFFFF;
+    margin: 5px;
+    padding: 15px;
+    border: dashed 2px #FFFFFF !important;
+    border-left: 2px dashed #FFFFFF;
+    border-right: 2px dashed #FFFFFF;
+
+/ / set animation -webkit-transition: all 0.4 s ease;
+    transition: all 0.4s ease;
+
+}
+.title:hover{
+
+}
+
+.title.sticky {
+    font-size: 25px;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 15px !important;
+
+    border: dashed 2px #FFFFFF !important;
+    border-left: 2px dashed #FFFFFF;
+    border-right: 2px dashed #FFFFFF;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+
+    height: 80px;
+
+
+background: #606161; /* fallback for old browsers */
+            /*background-size: 800% 800%;*/
+
+    -webkit-animation: gradient-animator 400s ease infinite;
+    -moz-animation: gradient-animator 400s ease infinite;
+    -o-animation: gradient-animator 400s ease infinite;
+    /*animation: gradient-animator 400s ease infinite;*/
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+
+/ / set animation -webkit-transition: all 0.4 s ease;
+    transition: all 0.4s ease;
+}
+
+header.sticky {
+    opacity: 0.87;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+
+
+background: #606161; /* fallback for old browsers */
+
+    -webkit-animation: gradient-animator 400s ease infinite;
+    -moz-animation: gradient-animator 400s ease infinite;
+    -o-animation: gradient-animator 400s ease infinite;
+    /*animation: gradient-animator 400s ease infinite;*/
+}
+
+#trans-nav {
+
+    float: right;
+    list-style-type: none;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    width: 40em;
+
+
+}
+
+#trans-nav li {
+    text-align: center;
+    float: left;
+    width: 10em;
+    position: relative;
+    padding: 0;
+    line-height: 75px;
+    / / set animation -webkit-transition: all 0.2 s ease;
+    transition: all 0.2s ease;
+
+}
+
+#trans-nav li:hover {
+    background-position: 0 -40px;
+}
+
+#trans-nav li a {
+    display: block;
+    padding: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#trans-nav li a:hover {
+    color: lightgray;
+}
+
+#trans-nav li ul {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    width: 8em;
+    background: #606161!important;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#trans-nav li:hover ul {
+    opacity: 1;
+}
+
+#trans-nav li ul li {
+    float: none;
+    position: static;
+    height: 0;
+    line-height: 0;
+    background: none;
+}
+
+#trans-nav li:hover ul li {
+    height: 30px;
+    line-height: 30px;
+}
+
+#trans-nav li ul li a {
+    background: #606161;
+}
+
+#trans-nav li ul li a:hover {
+    background-color: #a0a1a1;
+    color:white;
+}
+
+@-webkit-keyframes gradient-animator {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes gradient-animator {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-o-keyframes gradient-animator {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes gradient-animator {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
