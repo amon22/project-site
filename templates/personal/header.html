@@ -1,0 +1,66 @@
+<head>
+    {% load static %}
+    <link rel='stylesheet' type='text/css' href="{% static 'personal/css/header.css' %}"/>
+    <link rel='stylesheet' type='text/css' href="{% static 'personal/css/style.css' %}"/>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+
+
+    <script>
+        var pagetop, menu, yPos;
+        function yScroll() {
+            menu = document.getElementById('trans-nav');
+
+            yPos = window.pageYOffset;
+            if (yPos > 1) {
+                menu.style.visibility = "hidden"
+                $('header').addClass("sticky");
+                $('h2').addClass("sticky");
+
+
+            } else {
+                menu.style.visibility = "visible"
+
+                $('header').removeClass("sticky");
+                $('h2').removeClass("sticky");
+
+
+            }
+        }
+        window.addEventListener("scroll", yScroll);
+    </script>
+
+</head>
+
+<body>
+<!-- our markup -->
+<header>
+    <div class=row>
+        <a href="\"><h2 class="title col-sm-3"><span style="color:#b72640">./</span>project</h2></a>
+        <ul id="trans-nav" class="col-sm-9">
+            <li id="menu"><a href="\">Home</a></li>
+            <li><a href="#">Projects</a>
+                <ul>
+                    <li><a href="#">Hardware</a></li>
+                    <li><a href="#">Software</a></li>
+                </ul>
+            <li><a href="#">About</a></li>
+
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+</header>
+
+{% block content %}
+
+{% endblock %}
+
+<!-- import jQuery -->
+
+
+</body>

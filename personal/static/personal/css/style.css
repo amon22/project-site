@@ -1,0 +1,26 @@
+
+.mycontainer {
+    background-color: white !important;
+    border: 1px solid white;
+    border-radius: 0 !important;
+    min-height: 400px;
+    -webkit-box-shadow: 0px 0px 41px 0px rgba(133, 133, 133, 0.47);
+    -moz-box-shadow: 0px 0px 41px 0px rgba(133, 133, 133, 0.47);
+    box-shadow: 0px 0px 41px 0px rgba(133, 133, 133, 0.47);
+}
+
+.article-title {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    max-width: 10%;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.article-title p {
+    padding: 0;
+    margin: 0 !important;
+    padding: 10px;
+    color: slategray;
+    text-align: left;
+}
