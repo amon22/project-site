@@ -3,10 +3,16 @@
 {% block content %}
     <div style="height: 200px;"></div>
     <div class="container">
-        <div class="mycontainer" >
-            <div class="article-title">
-                <p>Lorem Ipsum</p>
+        {% for i in content %}
+            <div class="mycontainer">
+                <div class="article-title">
+
+                </div>
+                <div class="article-body">
+                    <p>{{ i }}</p>
+
+                </div>
             </div>
-        </div>
+        {% endfor %}
     </div>
 {% endblock %}

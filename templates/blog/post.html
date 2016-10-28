@@ -1,0 +1,28 @@
+{% extends "personal/header.html" %}
+{% block content %}
+
+		<div id="main" class="container" style="padding-left: 5%;padding-right: 5%">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">{{ post.title }}</a></h2>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2015-11-01">{{ post.date }}</time>
+									</div>
+								</header>
+								<span class="image featured"><img src="{{ post.postimage }}" alt="" /></span>
+                                    {{ post.body|safe|linebreaks }}
+								<footer>
+									<ul class="stats">
+										<li><a href="#">General</a></li>
+										<li><a href="#" class="icon fa-heart">28</a></li>
+										<li><a href="#" class="icon fa-comment">128</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+{% endblock %}

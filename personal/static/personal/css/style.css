@@ -7,6 +7,7 @@
     -webkit-box-shadow: 0px 0px 41px 0px rgba(133, 133, 133, 0.47);
     -moz-box-shadow: 0px 0px 41px 0px rgba(133, 133, 133, 0.47);
     box-shadow: 0px 0px 41px 0px rgba(133, 133, 133, 0.47);
+    margin-bottom: 100px;
 }
 
 .article-title {
@@ -21,6 +22,22 @@
     padding: 0;
     margin: 0 !important;
     padding: 10px;
-    color: slategray;
     text-align: left;
+}
+
+.article-body p {
+    color: slategray;
+    padding: 10px;
+}
+
+.mycard {
+    background-color: rgba(96, 97, 97, 0.86) !important;
+    color:whitesmoke !important;
+}
+
+.mycard a{
+    color: whitesmoke!important;
+}
+.pager li a i:link{
+    color: whitesmoke !important;
 }
